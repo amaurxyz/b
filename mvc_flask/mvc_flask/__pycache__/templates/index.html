@@ -9,7 +9,7 @@
 <body>
     <p>Lista de Tarefas do Igor</p>
     <ol>
-        {% ofr tarefa in tarefas}
+        {% for tarefa in tarefas}
             <li>{{tarefa.descricao}} -- {% if tarefa.concluido %} Concluido {% else %} Pendente {% endif %}</li>
     </ol>
 </body>
