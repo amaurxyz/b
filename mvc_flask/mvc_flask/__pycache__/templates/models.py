@@ -8,7 +8,7 @@ class Tarefa:
 
 tarefas = []
 
-t = Tarefas(1, "Comer")
-tarefas.append(t)
-t2 = Tarefas(2, "Dormir", True)
-tarefas.append(t2)
+def add_tarefas(descricao):
+    id = len(tarefas) + 1
+    nova_tarefa = tarefas(id, descricao)
+    Tarefa.append(nova_tarefa)
