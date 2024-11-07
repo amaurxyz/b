@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>Reservas </h1>
+        <a href="cadastroHospede.html">Cadastro de Hóspedes</a>
+        <a href="listaHospedes.html">Lista de Hóspedes</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="contabilidade.html">Contabilidade</a>
+        <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Nova Reserva</h2>
+        <form id="reservas-form">
+            <label for="hospede">Hóspede:</label>
+            <select id="HospedeSelecionado"></select>  
+
+            <label for="quarto">Tipo de Quarto:</label>
+            <select id="tipoQuarto">
+                <option value="solteiro">Solteiro</option>
+                <option value="casal">Casal</option>
+            </select>
+
+            <label for="precoQuarto">Preço do Quarto:</label>
+            <select id="precoQuarto">
+                <option value="100">Simples - R$100</option>
+                <option value="200">Suíte - R$200</option>
+                <option value="300">Suíte na Cobertura - R$300</option>
+            </select>
+
+            <label for="dias">Período de Aluguel (dias):</label>
+            <input type="number" id="dias" min="1" required>
+
+            <button type="submit">Fazer Reserva</button>
+        </form>
+
+        <h2>Lista de Reservas</h2>
+        <ul id="listaReservas"></ul>
+
+        <h2>Clientes Hospedados</h2>
+        <ul id="listaHospedados"></ul>
+    </section>
+
+    <script src="hotelariaEncantada.js"></script>
+</body>
+</html>

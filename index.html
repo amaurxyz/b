@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotelaria Encantada - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hotelaria Encantada</h1>
+    <nav>
+      <a href="cadastroHospede.html">Cadastro de Hóspedes</a>
+      <a href="listaHospedes.html">Lista de Hóspedes</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Login de Funcionário</h2>
+    <form id="login-form">
+      <label for="funcionarioNome">Nome:</label>
+      <input type="text" id="funcionarioNome" required>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="loginError" class="hidden">Nome ou senha incorretos. Tente novamente.</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Hotelaria Encantada. Todos os direitos reservados.</p>
+  </footer>
+  <script src="hotelariaEncantada.js"></script>
+</body>
+</html>
